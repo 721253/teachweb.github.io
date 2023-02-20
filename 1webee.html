@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="header">
+        <nav>
+        <a href="#" class="logo"><img src="F:\website element\New folder\images\logo.png" id="logo"></a>
+         <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+         </ul>
+         <div class="toogle-btn" id="btn">
+         <span id="btntext">Dark</span>
+         <img src="F:\website element\New folder\images\moon.png" id="btnIcon">
+         </div>
+    </nav>
+    <div class="content">
+        <h1>Hello!</h1>
+        <h1><span>I'm</span> <font color="red"> Roki</font></h1>
+        <p>I'm a new content creator,Thank you for visiting my page.</p>
+        <a href="https://openai.com/blog/chatgpt/">Here me</a>
+        <p><h2><font color="navy">Personal For You</font></h2></p>
+    </div>
+    <div class="image-box">
+        <img src="F:\website element\New folder\images\user.png">
+        <div class="pattern">
+           <img src="F:\website element\New folder\images\background.png">
+           <img src="F:\website element\New folder\images\background.png">
+        </div>
+    </div>
+    </div> 
+
+    <script>
+        let btn=document.getElementById("btn");
+        let btnText=document.getElementById("btntext");
+        let logo=document.getElementById("logo");
+        btn.onclick=function(){
+            document.body.classList.toggle("dark-theme");
+         if(document.body.classList.contains("dark-theme")){
+            btnIcon.src="F:\website element\New folder\images\sun.png";
+            btnText.innerHTML="Light";
+            logo.src="F:\website element\New folder\images\logo-white.png";
+         }else{
+            btnIcon.src="F:\website element\New folder\images\moon.png";
+            btnText.innerHTML="Dark";
+            logo.src="F:\website element\New folder\images\logo.png";
+         }
+        }
+    </script>
+
+</body>
+</html>
